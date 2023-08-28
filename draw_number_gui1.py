@@ -100,6 +100,7 @@ class Draw():
         pre=snw.predict(data,weights,bs)
         #print(pre,np.argmax(pre))
         print(np.argmax(pre))
+        tk.messagebox.askokcancel(title = 'number',message=str(np.argmax(pre)))
         pass
 
 def sigmoid(x,k=8,b=-0.5):
